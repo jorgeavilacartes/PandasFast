@@ -1,5 +1,5 @@
 # PandasFast
-Faster computation of apply and progress_apply functions of pandas using concurrent library. Parallel computation using Threads.
+Faster computation of `apply` and `progress_apply` functions from pandas, using concurrent library. Parallel computation using Threads.
 
 ___
 ___
