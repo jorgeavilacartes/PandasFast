@@ -19,7 +19,7 @@ Una clase que utiliza la librería `concurrent` para realizar cómputos utilizan
 ___ 
 ## `PandasFast(df, processes = None)`
 - Debe ser inicializada con un data frame `df`, el cual debe ser del tipo `pandas.core.DataFrame`. 
-- Está la opción de definir la cantidad de `Threads` a utilizar, mediante la variable `processes`. Se le da este nombre a la variable en lugar de llamar `threads` o `n_threads` porque se siguen los mismos nombres que utilizan las funciones, en este caso, la variable `processes` es un input para la clase `ThreadPoolExecutor` que nos ayuda a realizar la computación de manera concurrente. Por default está inicializada como `None`, esto asignará $2$ `Threads`.
+- Está la opción de definir la cantidad de `Threads` a utilizar, mediante la variable `processes`. Se le da este nombre a la variable en lugar de llamar `threads` o `n_threads` porque se siguen los mismos nombres que utilizan las funciones, en este caso, la variable `processes` es un input para la clase `ThreadPoolExecutor` que nos ayuda a realizar la computación de manera concurrente. Por default está inicializada como `None`, esto asignará 2 `Threads`.
 ___
 ## **`apply` y `progress_apply`**
 Recordemos que estas dos funciones hacen exactamente lo mismo, la única diferencia es que `progress_apply` utiliza internamente la librería `tqdm`, que nos permite tener una barra de progreso para tener un mayor control sobre el proceso.
@@ -36,7 +36,9 @@ En el caso de la clase `PandasFast`, estas funcionan de la misma forma, pues rec
 **Opcional**
 - `new_columns`: un `str` o una lista con nombres de las nuevas columnas. Esto depende de la cantidad de salidas que entregue `fun`.
 - `inplace`: si es `True`, la(s) nueva(s) columnas generadas serán incorporadas 
+___
 
+[ENG]
 ```
 from PandasFast import PandasFast
 
